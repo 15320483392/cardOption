@@ -3,12 +3,12 @@ server:
 
 spring:
   application:
-    name: ulp-account
+    name: card-option
   datasource:
-    name: ulp-account
-    url: jdbc:mysql://106.54.98.245:3306/ulp?characterEncoding=UTF-8&allowMultiQueries=true
+    name: card-option
+    url: jdbc:mysql://localhost:3306/card_option?characterEncoding=UTF-8&allowMultiQueries=true
     username: root
-    password: ww20191226
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   redis:
