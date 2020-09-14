@@ -2,7 +2,6 @@ package com.card.option.pay.controller;
 
 
 import com.card.option.pay.common.http.RestResponse;
-import com.card.option.pay.common.jwt.JwtUser;
 import com.card.option.pay.entity.bo.LoginUserInfo;
 import com.card.option.pay.entity.vo.LoginInfo;
 import com.card.option.pay.server.ILoginInService;
@@ -10,8 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -21,7 +19,7 @@ import org.springframework.stereotype.Controller;
  * @author wangtao
  * @since 2020-09-14
  */
-@Controller
+@RestController
 @RequestMapping("/login")
 public class LoginController {
 
