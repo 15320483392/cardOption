@@ -1,4 +1,4 @@
-package com.card.option.pay.entity.vo;
+package com.card.option.pay.domain.entity.vo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

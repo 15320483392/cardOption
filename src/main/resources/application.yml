@@ -16,12 +16,12 @@ spring:
     host: ${REDIS_HOST:106.54.98.245}
     port: ${REDIS_PORT:6379}
     password: "myredispassword"
-    sysName: pes-account
+    sysName: card-option
     enable: true
 
 mybatis-plus:
-  type-aliases-package: com.card.option.pay.entity
-  mapper-locations: classpath:com/card/option/pay/mapper/*Mapper.xml
+  type-aliases-package: com.card.option.pay.domain.entity
+  mapper-locations: classpath:com/card/option/pay/domain/mapper/*Mapper.xml
 
 swagger:
   enabled: true
@@ -32,3 +32,7 @@ swagger:
   contact:
     name: card
   terms-of-service-url: http://${spring.cloud.client.ip-address}:${server.port}
+
+wx-app:
+  app_id: appids
+  app_scret: ASSDFSFSDFSDFSDF

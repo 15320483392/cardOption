@@ -1,7 +1,7 @@
-package com.card.option.pay.dao;
+package com.card.option.pay.domain.dao;
 
-import com.card.option.pay.entity.Role;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.card.option.pay.domain.entity.Role;
 
 /**
  * <p>

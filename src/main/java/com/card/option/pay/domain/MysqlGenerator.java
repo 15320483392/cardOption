@@ -1,4 +1,4 @@
-package com.card.option.pay.entity;
+package com.card.option.pay.domain;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -58,11 +58,11 @@ public class MysqlGenerator {
         PackageConfig pc = new PackageConfig();
         //pc.setModuleName(scanner("模块名"));
         pc.setParent("com.card.option.pay");
-        pc.setEntity("entity");
+        pc.setEntity("domain.entity");
         pc.setService("server");
         pc.setServiceImpl("server.impl");
         pc.setController("controller");
-        pc.setMapper("dao");
+        pc.setMapper("domain.dao");
         mpg.setPackageInfo(pc);
 
         // 自定义配置

@@ -1,7 +1,7 @@
 package com.card.option.pay.server;
 
-import com.card.option.pay.entity.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.card.option.pay.domain.entity.Role;
 
 /**
  * <p>

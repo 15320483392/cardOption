@@ -31,6 +31,11 @@ public class RestResponse<T> {
         this.status = 200;
     }
 
+    public RestResponse<T> Success(){
+        this.message = "SUCCESS";
+        return this;
+    }
+
     public RestResponse<T> Success(String msg){
         this.message = msg;
         return this;

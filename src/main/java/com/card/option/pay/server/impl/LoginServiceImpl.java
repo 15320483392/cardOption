@@ -1,14 +1,16 @@
 package com.card.option.pay.server.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.card.option.pay.common.http.RestResponse;
 import com.card.option.pay.common.jwt.JwtUser;
 import com.card.option.pay.common.utils.CommonUtils;
 import com.card.option.pay.common.utils.TokenUtils;
-import com.card.option.pay.entity.Account;
-import com.card.option.pay.entity.User;
-import com.card.option.pay.entity.bo.LoginUserInfo;
-import com.card.option.pay.entity.vo.LoginInfo;
+import com.card.option.pay.config.Applets;
+import com.card.option.pay.domain.entity.Account;
+import com.card.option.pay.domain.entity.User;
+import com.card.option.pay.domain.entity.bo.LoginUserInfo;
+import com.card.option.pay.domain.entity.vo.LoginInfo;
 import com.card.option.pay.server.IAccountService;
 import com.card.option.pay.server.ILoginInService;
 import com.card.option.pay.server.IUserService;
@@ -40,6 +42,9 @@ public class LoginServiceImpl implements ILoginInService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private Applets applets;
+
     @Override
     public RestResponse<LoginUserInfo> loginIn(LoginInfo loginInfo) {
         RestResponse<LoginUserInfo> rest = new RestResponse<>();
@@ -68,5 +73,11 @@ public class LoginServiceImpl implements ILoginInService {
         loginUserInfo.setName(user.getName()).setToken(TokenUtils.createToken(jwtUser));
 
         return rest.Success("登录成功").setData(loginUserInfo);
+    }
+
+    @Override
+    public RestResponse loginInWx() {
+        log.info(JSONObject.toJSONString(applets));
+        return new RestResponse().Success();
     }
 }

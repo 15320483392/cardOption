@@ -1,15 +1,11 @@
 package com.card.option.pay.server;
 
-import com.card.option.pay.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.card.option.pay.domain.entity.User;
 
 /**
- * <p>
- *  服务类
- * </p>
- *
- * @author wangtao
- * @since 2020-09-14
+ * @author WTar
+ * @date 2020/9/16 16:42
  */
 public interface IUserService extends IService<User> {
 

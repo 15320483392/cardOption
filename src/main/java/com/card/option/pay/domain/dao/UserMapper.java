@@ -1,7 +1,7 @@
-package com.card.option.pay.dao;
+package com.card.option.pay.domain.dao;
 
-import com.card.option.pay.entity.Account;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.card.option.pay.domain.entity.User;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author wangtao
  * @since 2020-09-14
  */
-public interface AccountMapper extends BaseMapper<Account> {
+public interface UserMapper extends BaseMapper<User> {
 
 }

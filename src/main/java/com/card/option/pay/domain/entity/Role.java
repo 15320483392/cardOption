@@ -1,21 +1,18 @@
-package com.card.option.pay.entity;
+package com.card.option.pay.domain.entity;
 
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
-import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
 /**
- * <p>
- * 
- * </p>
- *
- * @author wangtao
- * @since 2020-09-14
+ * @author WTar
+ * @date 2020/9/16 16:45
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
